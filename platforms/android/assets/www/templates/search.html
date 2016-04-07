@@ -1,0 +1,26 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Search</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeSearch()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="row">
+      <i class="icon ion-ios-search col-10"></i>
+      <input class="input col" id="search" type="text" ng-model="searchText" placeholder="Search Item">
+        </div>
+    <ion-list>
+      <ion-item ng-repeat="dish in dishes | filter: searchText" href="#/app/menu/{{dish.id}}" ng-click="closeSearch()" class="item-thumbnail-left">
+        <img ng-src="{{baseURL+dish.image}}">
+        <h2>{{dish.name}}
+         <span style="font-size:75%">{{dish.price | currency}}</span>
+        <span class="badge badge-assertive">{{dish.label}}</span></h2>
+        <p>{{dish.description}}</p>
+          <ion-option-button class="button-assertive icon ion-plus-circled"
+            ng-click="addFavorite({{dish.id}})">
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-modal-view>

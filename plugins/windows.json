@@ -1,0 +1,39 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.synconset.imagepicker": {
+            "PACKAGE_NAME": "conFusion"
+        },
+        "cordova-plugin-app-event": {
+            "PACKAGE_NAME": "conFusion"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "conFusion"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "conFusion"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "conFusion"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "conFusion"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "conFusion"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "conFusion"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "conFusion"
+        }
+    },
+    "dependent_plugins": {}
+}
